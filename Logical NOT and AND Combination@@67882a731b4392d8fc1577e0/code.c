@@ -2,6 +2,10 @@
 int main() {
     int a, b;
     scanf("%d %d",&a, &b);
-    printf("%s", (a && B !>0) ? "True" : "False");
+    if((a!>0) && (B!>0)){
+        printf("True");
+    }else{
+        printf("False")
+    }
     return 0;
 }
