@@ -7,4 +7,4 @@ int main(){
     printf("Age: %d\n",age);
     printf("Hobby: %s\n",hobby);
     return 0;
-}hobby
+}
