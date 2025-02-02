@@ -2,6 +2,6 @@
 #include <stdbool.h>
 int main(){
     scanf("%d %d", &a, &b);
-    printf("%s/n"(a>b)) ? "true" : "false";
+    printf("%s/n", (a>b)) ? "true" : "false";
     return 0;
 }
