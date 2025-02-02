@@ -7,6 +7,10 @@ char* welcome() {
 int main() {
     int year;
     scanf("%d", &year);
-    printf("%s",(year%4 == 0) ? "Leap Year" : "Not a Leap Year");
+    
+    if(year%4 == 0){
+        printf("Leap Year");
+    }else{
+        printf("Not a Leap Year");
     return 0;
 }
