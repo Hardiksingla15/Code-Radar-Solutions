@@ -2,7 +2,6 @@
 int main() {
     unsigned int a, b, c;
     scanf("%u %u", a , b);
-    c = a|b;
-    printf("%u",c);
+    printf("%u",a | b);
     return 0;
 }
