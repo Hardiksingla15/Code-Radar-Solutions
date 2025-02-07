@@ -3,17 +3,17 @@ int main() {
     char a;
     scanf("%c";&a);
     if(a="A"){
-        printf("Excellent");
+        printf("%s","Excellent");
     }else if(a="B"){
-        printf("Good");
+        printf("%s","Good");
     }else if(a="C"){
-        printf("Average");
+        printf("%s","Average");
     }else if(a="D"){
-        printf("Below Average");
+        printf("%s","Below Average");
     }else if(a="F"){
-        printf("Fail");
+        printf("%s","Fail");
     }else{
-        printf("Invalid grade");
+        printf("%s","Invalid grade");
     }
     return 0;
 }
