@@ -13,4 +13,5 @@ int main(){
     }else if(a<60){
         printf("F");
     }
+    return 0;
 }
