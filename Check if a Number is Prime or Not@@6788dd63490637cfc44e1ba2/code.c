@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int a;
+    int a,i;
     int isprime = 1;
     scanf("%d",&a);
     if(a<=1){
@@ -18,6 +18,5 @@ int main() {
     }else{
         printf("Not Prime");
     }
-    
     return 0;
 }
