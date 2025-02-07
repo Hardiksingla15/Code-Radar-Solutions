@@ -1,20 +1,13 @@
 #include <stdio.h>
 
-void swap(int a, int b) {
-    printf("Before swapping: a = %d, b = %d\n", a, b);
-
-    a = a ^ b;
-    b = a ^ b;
-    a = a ^ b;
-
-    printf("After swapping: a = %d, b = %d\n", a, b);
+int setNthBit(int num, int n) {
+    return num | (1 << n);
 }
 
 int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
-    swap(x, y);
+    int num, n;
+    scanf("%d %d", &num, &n);
+    printf("%d\n", setNthBit(num, n));
     return 0;
 }
-
 
