@@ -16,8 +16,7 @@ int main() {
             printf("error");
     }
     }else{
-        printf("invalid operator")
+        printf("invalid operator");
     }
-
     return 0;
 }
