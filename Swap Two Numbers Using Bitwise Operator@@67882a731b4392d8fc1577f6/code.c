@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-void swap(int a, int b) {
-    printf("Before swapping: a = %d, b = %d\n", a, b);
-
+int main() {
+    int a, b;
+    
+    // Taking input
+    scanf("%d %d", &a, &b);
+    
+    // Swapping using XOR
     a = a ^ b;
     b = a ^ b;
     a = a ^ b;
+    
+    // Printing swapped values
+    printf("%d %d\n", a, b);
 
-    printf("After swapping: a = %d, b = %d\n", a, b);
-}
-
-int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
-    swap(x, y);
     return 0;
 }
+
