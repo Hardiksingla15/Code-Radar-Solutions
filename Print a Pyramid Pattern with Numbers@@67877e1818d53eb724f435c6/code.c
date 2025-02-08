@@ -1,9 +1,23 @@
 #include <stdio.h>
 
-void printPattern(int n) {
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", j);
+void printPyramid(int n) {
+    int i, j, num;
+    for (i = 1; i <= n; i++) {
+        // Print leading spaces
+        for (j = i; j < n; j++) {
+            printf(" ");
+        }
+        // Print numbers increasing up to the middle
+        num = 1;
+        for (j = 1; j <= i; j++) {
+            printf("%d", num);
+            num++;
+        }
+        // Print numbers decreasing after the middle
+        num -= 2;
+        for (j = 1; j < i; j++) {
+            printf("%d", num);
+            num--;
         }
         printf("\n");
     }
@@ -11,8 +25,9 @@ void printPattern(int n) {
 
 int main() {
     int n;
+    printf("Enter the number of rows: ");
     scanf("%d", &n);
-    printPattern(n);
+    printPyramid(n);
     return 0;
 }
 
