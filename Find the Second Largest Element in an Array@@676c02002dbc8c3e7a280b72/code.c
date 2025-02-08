@@ -10,7 +10,7 @@ int main() {
     }
 
     if (n < 2) {
-        printf("Array does not have enough elements.\n");
+        printf("-1\n"); // Not enough elements for a second largest
         return 0;
     }
 
@@ -26,10 +26,11 @@ int main() {
     }
 
     if (second == -1) {
-        printf("No second largest element.\n");
+        printf("-1\n"); // No second largest element
     } else {
         printf("%d\n", second);
     }
 
     return 0;
 }
+
