@@ -11,7 +11,6 @@ void printPattern(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of rows: ");
     scanf("%d", &n);
     printPattern(n);
     return 0;
