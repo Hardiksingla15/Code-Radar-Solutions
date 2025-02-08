@@ -5,14 +5,14 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        // Print leading spaces for the acute triangle shape
+        // Print leading spaces for the triangle shape
         for (int space = 1; space <= n - i; space++) {
-            printf("  ");
+            printf(" ");
         }
 
         // Print increasing numbers
         for (int j = 1; j <= i; j++) {
-            printf("%d ", j);
+            printf("%d", j);
         }
 
         // Print decreasing numbers
@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+
