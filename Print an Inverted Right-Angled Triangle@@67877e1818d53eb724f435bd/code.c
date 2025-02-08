@@ -1,15 +1,13 @@
 #include <stdio.h>
+
 int main() {
-    char a;
-    scanf("%c", &a);
-    if(a == 'R'){
-        printf("Stop");
-    }else if(a == 'G'){
-        printf("Go");
-    }else if(a == 'Y'){
-        printf("Slow Down");
-    }else{
-        printf("Invalid input");
+    int N;
+    scanf("%d", &N);
+    for (int i = N; i > 0; i--) {
+        for (int j = 0; j < i; j++) {
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
