@@ -3,7 +3,7 @@
 void printPattern(int n) {
     for (int i = 1; i <= n; i++) {
         // Print leading spaces
-        for (j = i; j < n; j++) {
+        for (int j = i; j < n; j++) {
             printf(" ");
         }
         for (int j = 1; j <= i; j++) {
