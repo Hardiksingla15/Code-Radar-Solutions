@@ -11,7 +11,6 @@ void printReverseTriangle(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of rows: ");
     scanf("%d", &n);
     printReverseTriangle(n);
     return 0;
