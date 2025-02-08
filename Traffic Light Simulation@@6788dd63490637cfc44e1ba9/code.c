@@ -4,7 +4,7 @@ int main() {
     scanf("%c",&a);
     if(a=='R'){
         printf("Stop");
-    }elseif(a=='G'){
+    }else if(a=='G'){
         printf("Go");
     }else if(a=='Y'){
         printf("Slow Down");
