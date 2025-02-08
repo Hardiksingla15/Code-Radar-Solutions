@@ -9,7 +9,7 @@ int main() {
             printf("  "); // Print spaces
         }
         for (j = 0; j <= i; j++) {
-            printf("* "); // Print stars
+            printf("*"); // Print stars
         }
         printf("\n");
     }
