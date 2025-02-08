@@ -1,17 +1,38 @@
 #include <stdio.h>
 
+void printFrequencies(int arr[], int n) {
+    int visited[n];
+    for (int i = 0; i < n; i++) {
+        visited[i] = 0;
+    }
+    
+    for (int i = 0; i < n; i++) {
+        if (visited[i] == 1)
+            continue;
+        
+        int count = 1;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                visited[j] = 1;
+                count++;
+            }
+        }
+        
+        printf("%d %d\n", arr[i], count);
+    }
+}
+
 int main() {
     int n;
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {
-        int num = i % 2; // Alternating start with 1 for odd rows and 0 for even rows
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", num);
-            num = 1 - num; // Toggle between 1 and 0
-        }
-        printf("\n");
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    printFrequencies(arr, n);
 
     return 0;
 }
+
