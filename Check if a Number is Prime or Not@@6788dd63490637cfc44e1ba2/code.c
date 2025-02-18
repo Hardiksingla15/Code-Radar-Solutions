@@ -8,7 +8,7 @@ int main() {
             count++;
         }
     }
-    if(count>2){
+    if(count<2){
         printf("Prime");
     }else{
         printf("Not Prime");
